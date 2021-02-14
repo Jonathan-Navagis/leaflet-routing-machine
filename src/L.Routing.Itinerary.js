@@ -153,7 +153,7 @@
 				distance = this._formatter.formatDistance(instr.distance);
 				icon = this._formatter.getIconName(instr, i);
 				weight = this._formatter.formatWeight(instr.weight);
-				step = this._itineraryBuilder.createStep(text, distance, icon, steps);
+				step = this._itineraryBuilder.createStep(text, distance, icon, steps, weight);
 
 				this._addRowListeners(step, r.coordinates[instr.index]);
 			}
