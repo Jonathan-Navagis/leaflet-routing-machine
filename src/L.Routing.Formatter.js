@@ -25,6 +25,10 @@
 			this._localization = new L.Routing.Localization(langs);
 		},
 
+		formatWeight: function(weight) {
+			return weight.toString();
+		},
+
 		formatDistance: function(d /* Number (meters) */, sensitivity) {
 			var un = this.options.unitNames || this._localization.localize('units'),
 				simpleRounding = sensitivity <= 0,

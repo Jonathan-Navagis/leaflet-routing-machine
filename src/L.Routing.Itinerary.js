@@ -142,6 +142,7 @@
 			    step,
 			    distance,
 			    text,
+			    weight,
 			    icon;
 
 			container.appendChild(steps);
@@ -151,6 +152,7 @@
 				text = this._formatter.formatInstruction(instr, i);
 				distance = this._formatter.formatDistance(instr.distance);
 				icon = this._formatter.getIconName(instr, i);
+				weight = this._formatter.formatWeight(instr.weight);
 				step = this._itineraryBuilder.createStep(text, distance, icon, steps);
 
 				this._addRowListeners(step, r.coordinates[instr.index]);

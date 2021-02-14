@@ -188,6 +188,7 @@
 							exit: step.maneuver.exit,
 							index: index,
 							mode: step.mode,
+							weight: step.weight,
 							modifier: modifier
 						});
 					}
